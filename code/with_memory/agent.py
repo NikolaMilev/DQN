@@ -10,9 +10,6 @@ from keras.utils import to_categorical
 from keras.models import model_from_json
 from keras.callbacks import History 
 
-# for resizing
-import scipy
-
 #other
 import numpy as np
 from collections import deque

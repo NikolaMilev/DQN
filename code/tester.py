@@ -1,4 +1,4 @@
-# testing metaparameters
+# Testing using the learned networks.
 
 PATH_TO_NETWORK="dve_velike_mreze_ima_memoriju/rezultati_10kk"
 TRAIN_EPSILON=0
@@ -16,11 +16,7 @@ from keras.utils import to_categorical
 from keras.models import model_from_json
 from keras.callbacks import History 
 
-import scipy
-
-
 #other
-from skimage.transform import resize
 import numpy as np
 from collections import deque
 import numpy as np
@@ -129,15 +125,6 @@ def getModel(path, height, width, depth, numActions):
 	model=buildNetwork(height, width, depth, numActions)
 	loadModelWeights(model, path)
 	return model
-
-def preprocessSingleFrameNew(img):
-	view=img
-	#view=img[::2,::2]
-	x=(view[:,:,0]*0.299 + view[:,:,1]*0.587 + view[:,:,2]*0.114)
-	p=scipy.misc.imresize(x, (84, 84)).astype(np.uint8)
-	# plt.imshow(p)
-	# plt.show()
-	return p
 
 def preprocessSingleFrame(img):
 	# Y = 0.299 R + 0.587 G + 0.114 B
