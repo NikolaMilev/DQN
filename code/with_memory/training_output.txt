@@ -1,0 +1,6 @@
+Built and compiled the network!
+Built and compiled the network!
+Avg learning reward last 100 episodes: 0.0000
+Built and compiled the network!
+Built and compiled the network!
+Avg learning reward last 100 episodes: 0.0000
