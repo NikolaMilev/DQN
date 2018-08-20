@@ -6,7 +6,7 @@ This is an implementation of the DQN algorithm, for my master thesis. The approa
 
 * The **code** directory contains the two versions of the code: *with memory* and *without memory*. Using the target network and other metaparameters can be tuned in the code, using the constants at the beginning of the files. This directory also contains the code used for testing the agent (in the file named tester.py ).
 
-* The **results** directory contains graphs and videos. The graphs (both in png and pgf formats) of the obtained training results, is inside the subdirectory **graphs** and the video files for two implementations are inside the subdirectory **videos**. There are two videos, both representing the behaviour of the agent with memory and target network. The difference for the agents in the video files is in the network architecture: one (target_memory.mp4) is using the architecture introduced in Mnih's DQN paper and the other (large_target_memory.mp4) uses DeepMind's architecture.
+* The **results** directory contains pre-trained networks, graphs and videos. The graphs (both in png and pgf formats) of the obtained training results, is inside the subdirectory **graphs** and the video files for two implementations are inside the subdirectory **videos**. There are two videos, both representing the behaviour of the agent with memory and target network. The difference for the agents in the video files is in the network architecture: one (target_memory.mp4) is using the architecture introduced in Mnih's DQN paper and the other (large_target_memory.mp4) uses DeepMind's architecture. The **networks** subdirectory contains the network weight after training 10 million frames.
 
 ## Dependencies
 
